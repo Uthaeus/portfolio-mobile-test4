@@ -5,10 +5,17 @@ function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <Text>Home Screen</Text>
-            <Button
-                title="Learn More About Me"
-                onPress={() => navigation.navigate('About')}
-            />
+
+            <View>
+                <Button
+                    title="Learn More About Me"
+                    onPress={() => navigation.navigate('About')}
+                />
+                <Button 
+                    title="Contact Me"
+                    onPress={() => navigation.navigate('Contact')}
+                />
+            </View>
         </View>
     );
 }
